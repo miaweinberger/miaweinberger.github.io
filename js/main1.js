@@ -39,11 +39,11 @@ var protests = [
   },
   {
     name: 'March for Health',
-    neighborhood: 'midtown east',
+    neighborhood: 'midtown',
     issue: 'healthcare',
     date: 'april 1 (saturday)',
     link: 'https://www.facebook.com/events/1586535964751336',
-    tags: ['healthCare', 'midtownEast']
+    tags: ['healthCare', 'midtown']
   }, 
   {
     name: 'NYC Equal Pay Day Rally',
@@ -60,6 +60,13 @@ var protests = [
     date: 'april 8 (saturday)',
     link: 'https://www.facebook.com/events/1168505523248809/',
     tags: ['womensRights', 'eastVillage', 'immigration']
+  }, {
+    name: 'General Strike Against Trump',
+    neighborhood: 'midtown',
+    issue: 'healthcare',
+    date: 'april 4 (tuesday)',
+    link: 'https://www.facebook.com/events/955108504624495/',
+    tags: ['healthCare', 'midtown']
   }
 ]
 
@@ -90,7 +97,12 @@ function displayCards() {
    if (chosenIssue === '.' && chosenNeighborhood === '.') {
       alert('Whoa there! Please select an issue and/or neighborhood.');
       $('.card').hide();
-    }
+    } 
+
+    // else if {
+    //   (chosenIssue === '.immigration' && chosenNeighborhood === '.bowery') {
+    //   alert('No match');
+    // }
 
    
    var currentTagArray = protests[index].tags;
@@ -101,14 +113,14 @@ function displayCards() {
         currentTagArray.forEach(function (item, index) {
           currentTags = currentTags + ' ' + item;
           // Here we see our string as it is bening made.
-          console.log('pass #' + (index + 1) + 'of our concatination: ', currentTags);
+          // console.log('pass #' + (index + 1) + 'of our concatination: ', currentTags);
           if (item === chosenIssue && item === chosenNeighborhood) {
 
           }
         });
       }
 
-  console.log('here is our big string for protest #' + (index + 1) + ': ', currentTags);
+  // console.log('here is our big string for protest #' + (index + 1) + ': ', currentTags);
 
    var card = `
       <div class="ui raised card ${currentTags}">
