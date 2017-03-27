@@ -44,6 +44,22 @@ var protests = [
     date: 'april 1 (saturday)',
     link: 'https://www.facebook.com/events/1586535964751336',
     tags: ['healthCare', 'midtownEast']
+  }, 
+  {
+    name: 'NYC Equal Pay Day Rally',
+    neighborhood: 'tribeca',
+    issue: 'women`s rights',
+    date: 'april 4 (tuesday)',
+    link: 'https://www.facebook.com/events/831983590287525/',
+    tags: ['womensRights', 'tribeca']
+  },
+  {
+    name: '2017 Anti-Street Harrassment Rally',
+    neighborhood: 'east village',
+    issue: 'women`s rights',
+    date: 'april 8 (saturday)',
+    link: 'https://www.facebook.com/events/1168505523248809/',
+    tags: ['womensRights', 'eastVillage', 'immigration']
   }
 ]
 
