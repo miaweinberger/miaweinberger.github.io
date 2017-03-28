@@ -92,6 +92,12 @@ h1 {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 8em;
+  }
+}
+
 h2, h3 {
   font-family: "Bevan", cursive;
   margin-top: 0px;
