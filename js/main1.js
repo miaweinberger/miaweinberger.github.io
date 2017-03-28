@@ -2,13 +2,22 @@ $(function () {
 
 var protests = [
   {
-    name: 'City of Refuge: 24 Hour Action for Refugees',
+    name: 'uh oh! no matches.',
     neighborhood: 'financial district', 
     issue: 'immigration',
-    date: 'march 28 (tuesday)',
-    link: 'https://www.facebook.com/events/1899030313649428/',
+    date: 'try different filters!',
+    link: 'https://miaweinberger.github.io',
     tags: ['financialDistrict', 'immigration']
-  } , {
+  } ,
+  // {
+  //   name: 'City of Refuge: 24 Hour Action for Refugees',
+  //   neighborhood: 'financial district', 
+  //   issue: 'immigration',
+  //   date: 'march 28 (tuesday)',
+  //   link: 'https://www.facebook.com/events/1899030313649428/',
+  //   tags: ['financialDistrict', 'immigration']
+  // }, 
+  {
     name: 'Cesar Chavez RALLY for New York State Farmworker Rights',
     neighborhood: 'lower manhattan',
     issue: 'immigration', 
@@ -95,11 +104,17 @@ function displayCards() {
    console.log(chosenNeighborhood);
 
    if (chosenIssue === '.' && chosenNeighborhood === '.') {
-      alert('Whoa there! Please select an issue and/or neighborhood.');
-      $('.card').hide();
-    } 
+      alert('Whoa there! Please select an issue and neighborhood.');
+      clearResults();
+    }
 
-    // else if {
+    function clearResults() {
+      $('#more-info').text('hey');
+    }
+
+
+    
+    // } else if {
     //   (chosenIssue === '.immigration' && chosenNeighborhood === '.bowery') {
     //   alert('No match');
     // }

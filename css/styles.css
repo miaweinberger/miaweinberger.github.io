@@ -257,6 +257,11 @@ span.text {
     padding-bottom: .3rem;
   }
 
+@media only screen and (max-width: 375px) {
+  .chitchat {
+    padding-left: .5rem;
+  }
+
   #upcoming-event, #add-here {
     font-size: 1.6em;
   }
