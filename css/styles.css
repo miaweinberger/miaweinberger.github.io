@@ -194,6 +194,12 @@ span.text {
 
 }
 
+@media only screen and (max-width: 400px) {
+  .btn-lg {
+    margin-top: 0;
+  }
+}
+
 .btn-lg:visited {
   background-color: white;
   color: #23F4FF;
