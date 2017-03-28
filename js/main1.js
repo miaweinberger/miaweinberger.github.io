@@ -5,7 +5,7 @@ var protests = [
     name: 'uh oh! no matches.',
     neighborhood: 'financial district', 
     issue: 'immigration',
-    date: 'try different filters!',
+    date: 'try different filters.',
     link: 'https://miaweinberger.github.io',
     tags: ['financialDistrict', 'immigration']
   } ,
